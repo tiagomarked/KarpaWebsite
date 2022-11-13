@@ -1,0 +1,60 @@
+body {
+  background-color: #021116;
+  color: white;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.bulb {
+  width: 500px;
+  height: 781px;
+}
+
+.bubble {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  -webkit-border-radius: 75px;
+  -moz-border-radius: 75px;
+  border-radius: 75px;
+  background: #49c3d8;
+}
+
+.bubble:hover {
+    background: cyan;
+}
+
+.bubbles :nth-child(1) {
+    transform: translateX(32%) translateY(40%);
+    scale: 110%;
+  }
+
+.bubbles :nth-child(2) {
+  transform: translateX(100%) translateY(45%);
+  scale: 180%;
+}
+
+.bubbles :nth-child(3) {
+  transform: translateX(35%) translateY(133%);
+  scale: 135%;
+}
+
+.bubbles :nth-child(4) {
+  transform: translateX(160%) translateY(225%);
+  scale: 105%;
+}
+
+.bulb_bg_img {
+  position: absolute;
+  height: auto;
+  width: inherit;
+  margin: auto;
+}
+
+.text_logo_img {
+  display: block;
+  margin: auto;
+  height: auto;
+  width: 400px;
+}
