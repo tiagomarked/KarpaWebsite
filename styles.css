@@ -13,22 +13,30 @@ body {
 
 .bubble {
   position: absolute;
+  font-family: "Avenir Next";
+  text-align: center;
+  text-anchor: end;
+  font-size: 200%;
   width: 150px;
   height: 150px;
+  line-height: 150px;
   -webkit-border-radius: 75px;
   -moz-border-radius: 75px;
   border-radius: 75px;
   background: #49c3d8;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
 }
 
 .bubble:hover {
-    background: cyan;
+  background: cyan;
 }
 
 .bubbles :nth-child(1) {
-    transform: translateX(32%) translateY(40%);
-    scale: 110%;
-  }
+  transform: translateX(32%) translateY(40%);
+  scale: 110%;
+}
 
 .bubbles :nth-child(2) {
   transform: translateX(100%) translateY(45%);
