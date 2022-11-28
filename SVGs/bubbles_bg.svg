@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Bubbles_Background" data-name="Bubbles Background" xmlns="http://www.w3.org/2000/svg" width="2531.52" height="3956.15" viewBox="0 0 2531.52 3956.15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #67cadc;
+      }
+
+      .cls-2 {
+        fill: #42b3bd;
+      }
+
+      .cls-3 {
+        fill: #4ac5d9;
+      }
+    </style>
+  </defs>
+  <circle class="cls-3" cx="1098.33" cy="3043.47" r="216.09" transform="translate(-1830.36 1668.05) rotate(-45)"/>
+  <circle class="cls-3" cx="1500.33" cy="3275.64" r="93.71" transform="translate(-1876.79 2020.31) rotate(-45)"/>
+  <circle class="cls-1" cx="284.31" cy="1232.45" r="209.91" transform="translate(-788.2 562.02) rotate(-45)"/>
+  <circle class="cls-1" cx="1291.05" cy="3580.86" r="142.59" transform="translate(-2153.91 1961.72) rotate(-45)"/>
+  <circle class="cls-2" cx="341.06" cy="715.64" r="131.65" transform="translate(-406.14 450.77) rotate(-45)"/>
+  <circle class="cls-2" cx="1016.65" cy="2194.5" r="339.27" transform="translate(-1253.98 1361.64) rotate(-45)"/>
+  <circle class="cls-2" cx="796.29" cy="966.6" r="281.97" transform="translate(-450.26 846.17) rotate(-45)"/>
+  <circle class="cls-2" cx="1392.24" cy="2804.11" r="285.99" transform="translate(-1575.03 1805.77) rotate(-45)"/>
+  <circle class="cls-2" cx="1271.64" cy="452.93" r="390.88" transform="translate(52.18 1031.84) rotate(-45)"/>
+</svg>

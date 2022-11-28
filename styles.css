@@ -1,12 +1,31 @@
 body {
   background-color: #021116;
   color: white;
-  height: 100vh;
   display: grid;
   place-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  position: relative;
+  height: 100vh;
+  height: 100%;
+  width: 100%;
+}
+
+.bg_video {
+  position: fixed;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  z-index: -100;
+  opacity: 20%;
 }
 
 .bulb {
+  display: block;
+  margin: auto;
   width: 500px;
   height: 781px;
 }
@@ -16,7 +35,7 @@ body {
   font-family: "Avenir Next";
   text-align: center;
   text-anchor: end;
-  font-size: 200%;
+  font-size: 0%;
   width: 150px;
   height: 150px;
   line-height: 150px;
@@ -31,26 +50,22 @@ body {
 
 .bubble:hover {
   background: cyan;
+  font-size: 200%;
 }
 
 .bubbles :nth-child(1) {
-  transform: translateX(32%) translateY(40%);
-  scale: 110%;
+  transform: translateX(117%) translateY(55%);
+  scale: 160%;
 }
 
 .bubbles :nth-child(2) {
-  transform: translateX(100%) translateY(45%);
-  scale: 180%;
+  transform: translateX(45%) translateY(150%);
+  scale: 130%;
 }
 
 .bubbles :nth-child(3) {
-  transform: translateX(35%) translateY(133%);
-  scale: 135%;
-}
-
-.bubbles :nth-child(4) {
-  transform: translateX(160%) translateY(225%);
-  scale: 105%;
+  transform: translateX(205%) translateY(260%);
+  scale: 90%;
 }
 
 .bulb_bg_img {
@@ -58,11 +73,27 @@ body {
   height: auto;
   width: inherit;
   margin: auto;
+  opacity: 60%;
+}
+
+.koi {
+  position: absolute;
+  height: auto;
+  width: inherit;
+  margin: auto;
+}
+
+.koi:hover {
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
+  opacity: 0%;
+  pointer-events: none;
 }
 
 .text_logo_img {
   display: block;
   margin: auto;
+  margin-top: 10px;
   height: auto;
   width: 400px;
 }
