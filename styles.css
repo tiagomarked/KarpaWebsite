@@ -1,56 +1,64 @@
 body {
+  display: flex;
+  justify-content: center;
   background-color: #021116;
   color: white;
-  display: grid;
-  place-items: center;
   padding: 0;
   margin: 0;
 }
 
 .main {
-  position: relative;
+  display: grid;
+  place-items: center;
   height: 100vh;
-  height: 100%;
-  width: 100%;
 }
 
 .bg_video {
   position: fixed;
-  overflow: hidden;
-  height: 100vh;
   width: 100%;
   z-index: -100;
   opacity: 20%;
 }
 
 .bulb {
-  display: block;
-  margin: auto;
   width: 500px;
-  height: 781px;
+  height: 782px;
 }
 
 .bubble {
   position: absolute;
-  font-family: "Avenir Next";
-  text-align: center;
-  text-anchor: end;
-  font-size: 0%;
+  overflow: hidden;
   width: 150px;
   height: 150px;
-  line-height: 150px;
-  -webkit-border-radius: 75px;
-  -moz-border-radius: 75px;
+  opacity: 90%;
   border-radius: 75px;
   background: #49c3d8;
-  -webkit-user-select: none;
   user-select: none;
   cursor: pointer;
 }
 
+#bubble-text {
+  font-family: "Avenir Next";
+  text-align: center;
+  text-anchor: end;
+  font-size: 12px;
+  animation: scroll-animation 2s linear infinite;
+}
+
+/* Define the animation */
+@keyframes scroll-animation {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50px);
+  }
+}
+
 .bubble:hover {
-  background: cyan;
-  font-size: 200%;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+  z-index: 100;
 }
 
 .bubbles :nth-child(1) {
@@ -72,28 +80,64 @@ body {
   position: absolute;
   height: auto;
   width: inherit;
-  margin: auto;
-  opacity: 60%;
+  opacity: 30%;
+  pointer-events: none;
+}
+
+.bubbles_bg_img {
+  position: absolute;
+  height: auto;
+  width: inherit;
+  opacity: 50%;
+  pointer-events: none;
 }
 
 .koi {
   position: absolute;
   height: auto;
   width: inherit;
-  margin: auto;
-}
-
-.koi:hover {
-  transition-timing-function: ease-in-out;
-  transition-duration: 1s;
-  opacity: 0%;
   pointer-events: none;
 }
 
 .text_logo_img {
-  display: block;
-  margin: auto;
-  margin-top: 10px;
   height: auto;
   width: 400px;
+  pointer-events: none;
+}
+
+.info-panel {
+  
+  display: none;
+  
+  height: 800px;
+  width: 800px;
+  margin-left: 5%;
+  border-radius: 400px;
+  -moz-border-radius: 400px;
+  background-color: #49c3d8;
+  overflow: hidden;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.info-panel-title {
+  font-size: 72px;
+  font-family: "Avenir Next";
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.info-panel-content {
+  font-family: "Avenir Next";
+  width: 65%;
+  height: 70%;
+  margin: 15% auto;
+  margin-top: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
